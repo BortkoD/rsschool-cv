@@ -51,6 +51,8 @@ header .container {
 
 .header-image {
   flex: 1;
+  width: 30%;
+  background-color: #D9F0FA;
 }
 
 .header-image img {
@@ -61,6 +63,7 @@ header .container {
 .header-info {
   color: #B0E099;
   flex: 2;
+  padding-left: 10px;
 }
 
 .header-name {
@@ -96,6 +99,12 @@ main .container {
   color: #676BC7; 
   width: 30%;
   background-color: #D9F0FA;
+}
+
+@media screen and (max-width: 575px) {
+  .skills-block {
+    order: 1;
+  }  
 }
 
 .main-info {
