@@ -25,6 +25,8 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: auto;
+
+  box-shadow: 3px 5px 10px 10px rgba(190,190,190,0.5);
 }
 
 .container {
