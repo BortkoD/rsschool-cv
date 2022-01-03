@@ -8,86 +8,151 @@
   src: url("assets/fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf");
 }
 
- * {
+/* Global Style */
+
+* {
   box-sizing: border-box;
   font-family: 'Roboto Slab';
+  padding: 0;
+  margin: 0;
 }
 
 body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  min-height: 100vh;
-  margin: 0; 
-  padding: 0;
-}
-
-header {
-  color: #B0E099;
-  margin: 0;
-}
-
-.header-image {
-  flex-basis: 30%;
-  padding: 20px;
-  align-content: center;
-}
-
-.header-image img {
-  width: 100%;
-}
-
-.header-info {
-  flex-basis: 70%;
-}
-
-.name {
-  font-size: 96px;
-  font-weight: bold;
-}
-
-.skill {
-  font-size: 48px;
-  font-weight: lighter;
 }
 
 .container {
-  max-width: 1440px;
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*End of Global Style*/
+
+/* Header Style */
+
+header {
+  min-height: 200px;
+  flex: 1;
+}
+
+header .container {
   display: flex;
   flex-direction: row;
 }
 
+.header-image {
+  flex: 1;
+  object-position: center;
+}
+
+.header-image img {
+  max-height: 300px;
+}
+
+.header-info {
+  color: #B0E099;
+  flex: 2;
+}
+
+.header-name {
+  font-size: 96px;
+  font-weight: bold;
+}
+
+.header-skill {
+  font-size: 48px;
+  font-weight: lighter;
+}
+
+/*End of Header Style*/
+
+/*Main Style*/
+
 main {
+  flex: 3;
+}
+
+main .container {
   display: flex;
-  margin: 0;
+  flex-direction: row;
+
+  color: #B0E099;
 }
 
 .skills-block {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  color: #676BC7; 
   background-color: #D9F0FA;
-  color: #676BC7;
-  flex-basis: 30%;
 }
 
 .main-info {
-  color: #B0E099;
-  flex-basis: 70%;
+  display: flex;
+  flex-direction: column; 
+  flex: 2;
+
+  background-color: #FFFFFF;
+  padding-left: 30px;
 }
 
-.info-block {
-  padding: 20px;
+.info-block * {
+  padding: 10px;
+}
+
+.info-block h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.info-block p {
+  font-size: 24px;
 }
 
 .code {
   background-color: rgba(229, 229, 229, 0.5);
-  padding: 10px;
 }
+
+/*End of Main Style*/
+
+/*Footer Style*/
 
 footer {
+  flex: 1;
   background-color: #B0E099;
+  max-height: 100px;
 }
 
-.footer-logo {
+footer .container {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+}
+
+.footer-logo img{
+  height: 60px;
+}
+
+.gh-logo {
+  flex: 1;
+  float: left;
+}
+
+.rs-logo {
+  flex: 1;
+  float: center;
+}
+
+.year {
+  flex: 1;
+  float: right;
+
+  color: #FFFFFF;
+  text-align: right;
   padding: 10px;
 }
+
+/*End of Footer Style*/
